@@ -1,0 +1,15 @@
+page-ticket {
+  .center {
+    text-align: center;
+  }
+
+  .scroll-content {
+    overflow-x: unset;
+    overflow-y: unset;
+    background-color: lightgrey;
+  }
+
+  .ion-segment {
+    padding: 10px;
+  }
+}

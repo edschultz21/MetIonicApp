@@ -1,0 +1,72 @@
+page-home {
+  .center {
+    text-align: center;
+  }
+  // Makes the list have no lines, shadows and proper border (left aligned).
+  .home-card {
+    box-shadow: none;
+    margin: unset;
+    border-radius: unset;
+  }
+  // Moves list to bottom.
+  .bottom-list {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  // Draw a line above each item.
+  .top-list-line {
+    border-top: 1px solid #6868a7;
+  }
+
+  .scroll-content {
+    overflow-x: unset;
+    overflow-y: unset;
+  }
+  // Creates the correct gradient and makes the text white.
+  .content-ios {
+    background: linear-gradient(to right, #87aff7, #0859e2);
+    color: white;
+    padding-right: 0px;
+  }
+  // Needs to be transparent to get it to show through the list.
+  .card-ios {
+    background: transparent;
+    width: 100%;
+  }
+  // Removes the last line in a list.
+  .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: 0;
+  }
+
+  .list-ios > .item-block:first-child {
+    border-top: 1px solid #6868a7;
+  }
+
+  .item-ios {
+    color: white;
+    background: transparent;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @-moz-keyframes spin {
+    0% {
+      -moz-transform: rotate(0deg);
+    }
+
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+}

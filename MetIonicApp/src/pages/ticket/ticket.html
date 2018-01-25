@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>My Tickets</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only>
+        <ion-icon name="refresh">
+        </ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment>
+    <ion-segment-button>Single Rider</ion-segment-button>
+    <ion-segment-button>Multiple Rider</ion-segment-button>
+  </ion-segment>
+
+  <ion-label>TICKETS IN USE</ion-label>
+  <ion-list>
+    <button ion-item detail-none (click)="onLink('http://go.microsoft.com/fwlink/?LinkID=820516')">
+      <ion-icon name="card" item-left></ion-icon>
+      Zones F to A
+    </button>
+    <!--<button ion-item detail-none></button>
+    <button ion-item detail-none></button>
+    <button ion-item detail-none></button>
+    <button ion-item detail-none></button>
+    <button ion-item detail-none></button>-->
+  </ion-list>
+</ion-content>
